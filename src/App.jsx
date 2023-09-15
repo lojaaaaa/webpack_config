@@ -2,7 +2,10 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>App fdfdfdsf</div>
+    <>
+      <h1 className='App'>React with Webpack</h1>
+    </>
+    
   )
 }
 

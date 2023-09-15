@@ -2,7 +2,7 @@
   "name": "webpack-cfg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.jsx",
+  "main": "main.jsx",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack"
