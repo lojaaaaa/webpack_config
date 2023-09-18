@@ -74,6 +74,19 @@ module.exports = (env, argv) => {
             'sass-loader',
           ],
         },
+        {
+          test: /\.(png|jpg|jpeg|gif|svg)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]', // Это определяет имя и расширение сохраняемых файлов
+                outputPath: 'images', // Определяет папку для сохранения изображений (по умолчанию они будут сохранены в выходной каталог)
+              },
+            },
+          ],
+        },
+        
 
       ],
     },
