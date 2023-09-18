@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "allowImportingTsExtensions": true,
+      "target": "ESNext",
+      "noEmit": true,
+      "module": "ESNext",
+      "jsx": "react",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["node_modules"]
+  }
+  
