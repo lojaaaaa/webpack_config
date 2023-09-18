@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
       filename: isProduction ? '[name].[contenthash].js' : 'bundle.js',
     },
     devServer: {
-      port: 1233,
+      port: 9999,
       open: true,
     },
     module: {
@@ -48,7 +48,6 @@ module.exports = (env, argv) => {
                 },
               },
             },
-            'typings-for-css-modules-loader',
           ],
         },
         {
@@ -73,14 +72,13 @@ module.exports = (env, argv) => {
               },
             },
             'sass-loader',
-            'typings-for-css-modules-loader',
           ],
         },
 
       ],
     },
     resolve:{
-      extensions: ['.ts', '.js', '.json', '.tsx', '.jsx']
+      extensions: [".ts", ".tsx", ".js", ".css", ".scss"]
     },
     plugins: [
       new HtmlWebpackPlugin({
