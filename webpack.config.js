@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
       filename: isProduction ? '[name].[contenthash].js' : 'bundle.js',
     },
     devServer: {
-      port: 2145,
+      port: 1233,
       open: true,
     },
     module: {
@@ -23,6 +23,11 @@ module.exports = (env, argv) => {
           exclude: /node_modules/,
           use: 'babel-loader',
         },
+        {
+          test: /\.(ts|tsx)$/,
+          exclude: /node_modules/,
+          use: 'ts-loader',
+        },        
         {
           test: /\.css$/,
           exclude: /\.module\.css$/,
@@ -73,6 +78,9 @@ module.exports = (env, argv) => {
         },
 
       ],
+    },
+    resolve:{
+      extensions: ['.ts', '.js', '.json', '.tsx', '.jsx']
     },
     plugins: [
       new HtmlWebpackPlugin({
