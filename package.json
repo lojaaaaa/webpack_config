@@ -1,17 +1,15 @@
 {
   "name": "webpack-cfg",
   "version": "1.0.0",
-  "description": "",
+  "description": "react-ts with webpack",
   "main": "main.jsx",
   "scripts": {
+    "prod": "webpack --mode production",
+    "dev": "webpack server --mode development --hot",
     "start": "webpack serve",
-    "build": "webpack",
-    "dev": "webpack --mode production",
-    "prod": "webpack server --mode development --hot",
-    "start_2": "cross-env NODE_ENV=development webpack server --mode development --hot",
-    "build_2": "cross-env NODE_ENV=production webpack --mode production"
+    "build": "webpack"
   },
-  "author": "",
+  "author": "lojaaaaa",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.19",

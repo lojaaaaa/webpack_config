@@ -13,9 +13,10 @@ module.exports = (env, argv) => {
       filename: isProduction ? '[name].[contenthash].js' : 'bundle.js',
     },
     devServer: {
-      port: 9999,
+      port: 3000,
       open: true,
     },
+    devtool: 'source-map',
     module: {
       rules: [
         {
